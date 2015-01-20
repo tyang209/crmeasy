@@ -122,6 +122,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
 
-if ENV_ROLE = 'production':
+if ENV_ROLE == 'production':
     import dj_database_url
     DATABASES['default'] = dj_database_url.config()
